@@ -28,12 +28,13 @@ $(document).ready(function() {
       $('.resultsList').empty();
         $('#results').show();
 
-      if(result.results === " "){
+        if(result.count === 0){
         $('#results').text("There are no petitions on that issue at the moment.")
-      } else {
+          } else {
 
         //show results div and add results to list
     		$.each(result.results, function(i, result){
+
     		
     			$('.resultsList').append('<li><a href = "' + result.url + '" target = "_blank">'+ result.title + '</a></li>');
 
