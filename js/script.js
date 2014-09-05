@@ -23,9 +23,10 @@ $(document).ready(function() {
   		type: "GET"
   	})
   	.done(function(result) {
+
   		$.each(result.results, function(i, result){
-  			
-  			$('#resultsList').append('<li>'+ results.title + '<a href = "' + results.url + '"></a></li>');
+  			$('#results').show();
+  			$('#resultsList').append('<li>'+ result.results.title + '<a href = "' + result.results.url + '"></a></li>');
 
   		}); //end each
 

@@ -74,19 +74,20 @@ p {
 	   It can be fully wide in this case */
 	background-size: 100% 150px;
 	min-height: 800px;
-	padding: 2em;
+	/*padding: 2em;*/
 	text-align: center;
 	/*display: inline-block;*/
-	width: 68%;
+	width: 74%;
 	float: left;
 }
 
 form {
 	margin: .3em auto;
+	padding: 2em;
 }
 
 #results {
-	/*display: none;*/
+	display: none;
 	background-color: rgba(255,255,255,.4);
 	width: 80%;
 	height: 400px;
