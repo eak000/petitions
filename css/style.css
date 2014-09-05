@@ -10,10 +10,52 @@
 
 }
 
+h1, h2 {
+	color: #FFFFFF;
+}
+
+h1 {
+	font-family: 'bebasregular', Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
+	font-size: 3em;
+	position: absolute;
+	bottom: 0;
+	padding-left: .5em;
+	padding-bottom: .15em;
+}
+
+h2 {
+	font-family: 'bebasregular', Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
+	font-size: 2em;
+	position: absolute;
+	bottom: 0;
+	right: 10%;
+	padding-left: .5em;
+	padding-bottom: .15em;
+}
+
+a {
+	text-decoration: none;
+	color: #d85d5d;
+	font-family: "Ariel", sans-serif;
+}
+
+a:hover {
+	color: red;
+}
+
+a:visited {
+	color: slategray;
+}
+
+p {
+	line-height: 1.2em;
+}
+
+
 .container {
 	margin: 0 auto;
 	padding: .05em;
-	font-family: Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+	font-family: Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
 
 }
 
@@ -25,33 +67,6 @@ header {
 	position: relative;
 }
 
-h1, h2 {
-	color: #FFFFFF;
-}
-
-h1 {
-	font-family: 'bebasregular', Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
-	font-size: 3em;
-	position: absolute;
-	bottom: 0;
-	padding-left: .5em;
-	padding-bottom: .15em;
-}
-
-h2 {
-	font-family: 'bebasregular', Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
-	font-size: 2em;
-	position: absolute;
-	bottom: 0;
-	right: 10%;
-	padding-left: .5em;
-	padding-bottom: .15em;
-}
-
-p {
-	line-height: 1.2em;
-}
-
 .sidebar {
 	min-height: 800px;
 	width: 20%;
@@ -59,7 +74,7 @@ p {
 	float: left;
 	color: #FFFFFF;
 	text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
-	padding: 1.5em;
+	padding: 3.5em 1.5em;
 }
 
 .main {
@@ -96,4 +111,14 @@ form {
 
 }
 
+ul {
+	/*list-style: none;*/
+	margin: 1em;
+	text-align: left;
+	padding: 1em;
+}
+
+li {
+	padding: .5em 0;
+}
 
