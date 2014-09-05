@@ -82,7 +82,7 @@ p {
 }
 
 form {
-	margin: 2em auto;
+	margin: .3em auto;
 }
 
 #results {
@@ -90,8 +90,9 @@ form {
 	background-color: rgba(255,255,255,.4);
 	width: 80%;
 	height: 400px;
-	margin: 0 auto;
+	margin: 2em auto;
 	border: 1px solid black;
+
 }
 
 
