@@ -26,7 +26,7 @@ $(document).ready(function() {
 
   		$.each(result.results, function(i, result){
   			$('#results').show();
-  			$('#resultsList').append('<li>'+ result.results.title + '<a href = "' + result.results.url + '"></a></li>');
+  			$('.resultsList').append('<li>'+ result.title + '<a href = "' + result.url + '"></a></li>');
 
   		}); //end each
 
