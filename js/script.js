@@ -30,28 +30,24 @@ $(document).ready(function() {
         //show results div 
         $('#results').show();
 
+        //if no results show
+        if (result.results.length == 0){
+          console.log("empty");
+          $('#results').text("There are no petitions on that issue at the moment.");
+          } else {
         //add results to list
     		$.each(result.results, function(i, result){
-
-    		
-    			$('.resultsList').append('<li><a href = "' + result.url + '" target = "_blank">'+ result.title + '</a></li>');
-
-    		}); //end each
-
-        //if no results show
-        if ($('.resultsList').html() == ""){
-          console.log("empty");
-        $('#results').text("There are no petitions on that issue at the moment.");
-        return;
-          };
+          $('.resultsList').append('<li><a href = "' + result.url + '" target = "_blank">'+ result.title + '</a></li>');
+          }); //end each
+        }
 
       //clear search field
       $('#tags').val(" ");
       //change search button text back to search
   		$('#search').prop("disabled", false);
   		$('#submit').attr("disabled", false).val("Search");
-  	}) //end done function
 
+  	}); //end done function
   
 	}); //end submit function
 
