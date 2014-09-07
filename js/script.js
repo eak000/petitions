@@ -13,6 +13,7 @@ $(document).ready(function() {
   			isSignable: true,
   			title: searchTags,
   			body: searchTags,
+        // resultset: count,
   			site: 'whitehouse'
   	};
 
@@ -26,20 +27,23 @@ $(document).ready(function() {
 
       //empty results from previous search if any
       $('.resultsList').empty();
+        //show results div 
         $('#results').show();
 
-        if(result.count === 0){
-        $('#results').text("There are no petitions on that issue at the moment.")
-          } else {
-
-        //show results div and add results to list
+        //add results to list
     		$.each(result.results, function(i, result){
 
     		
     			$('.resultsList').append('<li><a href = "' + result.url + '" target = "_blank">'+ result.title + '</a></li>');
 
     		}); //end each
-      };
+
+        //if no results show
+        if ($('.resultsList').html() == ""){
+          console.log("empty");
+        $('#results').text("There are no petitions on that issue at the moment.");
+        return;
+          };
 
       //clear search field
       $('#tags').val(" ");
