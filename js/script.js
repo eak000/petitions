@@ -32,13 +32,12 @@ $(document).ready(function() {
 
         //if no results show
         if (result.results.length == 0){
-          console.log("empty");
           $('#results').text("There are no petitions on that issue at the moment.");
           } else {
         //add results to list
     		$.each(result.results, function(i, result){
           $('.resultsList').append('<li><a href = "' + result.url + '" target = "_blank">'+ result.title + '</a></li>');
-          }); //end each
+          }) //end each
         }
 
       //clear search field
@@ -47,7 +46,7 @@ $(document).ready(function() {
   		$('#search').prop("disabled", false);
   		$('#submit').attr("disabled", false).val("Search");
 
-  	}); //end done function
+  	}) //end done function
   
 	}); //end submit function
 
