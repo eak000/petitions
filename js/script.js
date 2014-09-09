@@ -28,13 +28,18 @@ $(document).ready(function() {
       //empty results from previous search if any
       $('.resultsList').empty();
         //show results div 
-        $('#results').show();
+        // $('#results').show();
+
+        //hide directions
+        $('.directions').hide();
 
         //if no results show
         if (result.results.length == 0){
-          $('#results').text("There are no petitions on that issue at the moment.");
+          $('.resultsList').append('<li>There are no active petitions on that issue at the moment. <br/>Would you like to <a href = "https://petitions.whitehouse.gov/petition/create" target="_blank"><span class="bold">start one?</span></a>></li>');
+          // $('#results').text("There are no petitions on that issue at the moment.");
           } else {
         //add results to list
+        // $('#results').append('<ul #resultsList>')
     		$.each(result.results, function(i, result){
           $('.resultsList').append('<li><a href = "' + result.url + '" target = "_blank">'+ result.title + '</a></li>');
           }) //end each

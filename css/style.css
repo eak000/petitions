@@ -36,7 +36,6 @@ h2 {
 a {
 	text-decoration: none;
 	color: #d85d5d;
-	font-family: "Ariel", sans-serif;
 }
 
 a:hover {
@@ -47,14 +46,21 @@ a:visited {
 	color: slategray;
 }
 
+.resultsList a {
+	font-family: "Ariel", sans-serif;
+}
+
 p {
-	line-height: 1.2em;
+	line-height: 1.4em;
 }
 
 
 .container {
+	min-width: 800px;
 	margin: 0 auto;
 	padding: .05em;
+	height: auto;
+	min-height: 100%;
 	font-family: Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
 
 }
@@ -64,6 +70,7 @@ header {
 	background-position: 0 bottom;
 	background-size: auto 85%;
 	min-height: 250px;
+	min-width: 800px;
 	position: relative;
 }
 
@@ -75,6 +82,8 @@ header {
 	color: #FFFFFF;
 	text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
 	padding: 3.5em 1.5em;
+	height: 100%;
+	display: inline-block;
 }
 
 .main {
@@ -89,11 +98,12 @@ header {
 	   It can be fully wide in this case */
 	background-size: 100% 150px;
 	min-height: 800px;
+	height: 100%;
 	/*padding: 2em;*/
 	text-align: center;
-	/*display: inline-block;*/
 	width: 74%;
 	float: left;
+	display: inline-block;
 }
 
 form {
@@ -102,7 +112,7 @@ form {
 }
 
 #results {
-	display: none;
+	/*display: none;*/
 	background-color: rgba(255,255,255,.4);
 	width: 80%;
 	margin: 2em auto;
@@ -110,8 +120,15 @@ form {
 
 }
 
+.directions {
+	margin-top: 1em;
+}
+
+.bold {
+	font-weight: bold;
+}
+
 ul {
-	/*list-style: none;*/
 	margin: 1em;
 	text-align: left;
 	padding: 1em;
