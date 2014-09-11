@@ -87,6 +87,7 @@ header {
 	clear: both;
 	overflow: hidden;
 	display: inline-block;
+	position: relative;
 }
 
 .mainContainer:after {
@@ -96,7 +97,6 @@ header {
 }
 
 .sidebar {
-	/*min-height: 800px;*/
 	width: 20%;
 	background-color: #cbd9ed;
 	float: left;
@@ -106,7 +106,7 @@ header {
 	min-height: 100%;
 }
 
-.main {
+section {
 	background: linear-gradient(
   to bottom,
   #FFFFFF,
@@ -114,15 +114,21 @@ header {
   #F2E6E6 50%,
   #F2E6E6
 	);
-	/* The rectangle in which to repeat. 
-	   It can be fully wide in this case */
+	/* The rectangle in which to repeat.*/ 
 	background-size: 100% 150px;
-	/*min-height: 800px;*/
 	min-height: 100%;
-	/*padding: 2em;*/
+	padding: 2em;
 	text-align: center;
 	width: 74%;
 	float: left;
+	display: inline-block;
+	position: absolute;
+}
+
+section:after {
+  content:"";
+  display:table;
+  clear:both;
 }
 
 form {
