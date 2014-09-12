@@ -49,7 +49,7 @@ $(document).ready(function() {
       $('#tags').val(" ");
       //change search button text back to search
   		$('#search').prop("disabled", false);
-  		$('#submit').attr("disabled", false).val("Search");
+  		$('#submit').attr("disabled", false).val("search");
 
   	}) //end done function
   
