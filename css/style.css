@@ -54,8 +54,8 @@ a:visited {
 	color: slategray;
 }
 
-.resultsList a {
-	font-family: "Ariel", sans-serif;
+.resultsList a, input {
+	font-family: "Arial", sans-serif;
 }
 
 p {
@@ -117,7 +117,7 @@ section {
 	/* The rectangle in which to repeat.*/ 
 	background-size: 100% 150px;
 	min-height: 100%;
-	padding: 2em;
+	/*padding: 2em;*/
 	text-align: center;
 	width: 74%;
 	float: left;
@@ -163,3 +163,19 @@ li {
 	padding: .5em 0;
 }
 
+input[type=text]{
+	padding: 5px;
+	margin-left: 10px;
+}
+
+input[type=submit] {
+	width: 110px;
+	padding: 5px 10px;
+	margin-left: 15px;
+	background-color: black;
+	color: white;
+	border: none;
+	font-size: 1em;
+	font-weight: bold;
+
+}
