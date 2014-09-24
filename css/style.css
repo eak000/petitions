@@ -70,7 +70,7 @@ p {
 	min-height: 100%;
 	clear: both;
 	font-family: Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
-
+	overflow: hidden;
 }
 
 header {
@@ -83,7 +83,6 @@ header {
 }
 
 .mainContainer {
-	min-height: 900px;
 	clear: both;
 	overflow: hidden;
 	display: inline-block;
@@ -117,7 +116,7 @@ section {
 	/* The rectangle in which to repeat.*/ 
 	background-size: 100% 150px;
 	min-height: 100%;
-	/*padding: 2em;*/
+	padding: 2em;
 	text-align: center;
 	width: 74%;
 	float: left;
